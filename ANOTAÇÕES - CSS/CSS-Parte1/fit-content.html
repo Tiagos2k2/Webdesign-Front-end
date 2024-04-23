@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-content</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .item{
+            background-color: aqua;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content{
+            width: min-content;
+        }
+
+        .max-content{
+            width: max-content;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container fit-content">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, explicabo?</div>   
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quisquam earum magni quaerat fugit quas omnis delectus tenetur sunt consectetur, possimus architecto quibusdam quia est similique ipsum deserunt, reprehenderit sint!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, totam consectetur quibusdam corrupti sequi adipisci excepturi voluptas, consequatur mollitia assumenda tempora doloribus. Minima voluptatem dolore consequuntur veniam labore, animi amet ratione molestias impedit dolorem, autem corrupti doloribus quisquam numquam quis nemo recusandae aliquam, assumenda consectetur earum fuga. Hic assumenda blanditiis tempore ducimus rerum alias perspiciatis saepe maiores eveniet atque reiciendis sequi id, beatae a dignissimos quasi reprehenderit error cupiditate sit ab? Nobis odio voluptas odit possimus beatae iure iusto totam.</div>
+    </div>
+
+    <div class="container min-content">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, explicabo?</div>   
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quisquam earum magni quaerat fugit quas omnis delectus tenetur sunt consectetur, possimus architecto quibusdam quia est similique ipsum deserunt, reprehenderit sint!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, totam consectetur quibusdam corrupti sequi adipisci excepturi voluptas, consequatur mollitia assumenda tempora doloribus. Minima voluptatem dolore consequuntur veniam labore, animi amet ratione molestias impedit dolorem, autem corrupti doloribus quisquam numquam quis nemo recusandae aliquam, assumenda consectetur earum fuga. Hic assumenda blanditiis tempore ducimus rerum alias perspiciatis saepe maiores eveniet atque reiciendis sequi id, beatae a dignissimos quasi reprehenderit error cupiditate sit ab? Nobis odio voluptas odit possimus beatae iure iusto totam.</div>
+    </div>
+
+    <div class="container max-content">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, explicabo?</div>   
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quisquam earum magni quaerat fugit quas omnis delectus tenetur sunt consectetur, possimus architecto quibusdam quia est similique ipsum deserunt, reprehenderit sint!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, totam consectetur quibusdam corrupti sequi adipisci excepturi voluptas, consequatur mollitia assumenda tempora doloribus. Minima voluptatem dolore consequuntur veniam labore, animi amet ratione molestias impedit dolorem, autem corrupti doloribus quisquam numquam quis nemo recusandae aliquam, assumenda consectetur earum fuga. Hic assumenda blanditiis tempore ducimus rerum alias perspiciatis saepe maiores eveniet atque reiciendis sequi id, beatae a dignissimos quasi reprehenderit error cupiditate sit ab? Nobis odio voluptas odit possimus beatae iure iusto totam.</div>
+    </div>
+</body>
+</html>

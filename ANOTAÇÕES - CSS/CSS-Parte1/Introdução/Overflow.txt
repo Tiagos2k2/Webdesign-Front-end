@@ -1,0 +1,29 @@
+A propriedade `overflow` em CSS é usada para controlar como o conteúdo que excede as dimensões de um elemento deve ser tratado. Ela é frequentemente utilizada em elementos que possuem uma altura ou largura fixa, ou em layouts que exigem controle sobre o comportamento do conteúdo que se estende além das bordas do elemento.
+
+Existem quatro valores principais para a propriedade `overflow`:
+
+1. `visible`:
+   - Este é o valor padrão. O conteúdo que excede as dimensões do elemento é visível fora do contêiner. Isso significa que o conteúdo pode se sobrepor a outros elementos na página.
+
+2. `hidden`:
+   - O conteúdo que excede as dimensões do elemento é oculto. Isso significa que o conteúdo que estiver fora das bordas do contêiner será cortado e não será visível para o usuário.
+
+3. `scroll`:
+   - Uma barra de rolagem será adicionada ao contêiner, permitindo que o usuário role para ver o conteúdo que excede as dimensões do elemento. Mesmo que o conteúdo seja totalmente visível, a barra de rolagem será exibida, ocupando espaço no contêiner.
+
+4. `auto`:
+   - Uma barra de rolagem será adicionada ao contêiner apenas se necessário. Se o conteúdo exceder as dimensões do elemento, uma barra de rolagem será exibida, caso contrário, nenhum espaço será reservado para a barra de rolagem.
+
+Exemplo de uso:
+
+```css
+.container {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+```
+
+Neste exemplo, a classe `.container` define um elemento com largura e altura fixas de 200 pixels e a propriedade `overflow: auto;` é usada para adicionar uma barra de rolagem ao contêiner apenas se necessário.
+
+A propriedade `overflow` é uma ferramenta útil para controlar o comportamento do conteúdo dentro dos elementos e garantir que o layout da página da web seja apresentado da maneira desejada.

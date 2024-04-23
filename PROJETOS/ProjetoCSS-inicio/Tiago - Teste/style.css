@@ -1,0 +1,47 @@
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(189, 181, 181);
+}
+
+header{
+    text-align: center;
+}
+
+header, h1 p{
+    color: white;
+}
+
+ul{
+    text-decoration: none;
+}
+
+nav, ul, li{
+    text-decoration: none;
+    list-style-type: none;
+    display:inline;
+    vertical-align:baseline;
+    text-align: right;
+    color: white;
+}
+
+article {
+    margin: 50px;
+    padding: 5px;
+    background-color: white;
+}
+
+article h3{
+    margin: 20px 20px 10px 10px;
+    padding: 10px;
+    background-color: rgb(204, 204, 204);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+}

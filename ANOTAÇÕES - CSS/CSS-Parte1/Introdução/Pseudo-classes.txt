@@ -1,0 +1,23 @@
+Pseudo-classes em CSS são usadas para selecionar e estilizar elementos com base em seu estado ou posição no documento HTML, sem a necessidade de adicionar classes extras no HTML. Elas são precedidas por dois pontos (:) e adicionadas ao seletor de um elemento.
+
+:hover: Esta pseudo-classe é acionada quando o cursor do mouse está sobre um elemento. É comumente usada para fornecer feedback visual interativo ao usuário, como alterar a cor de fundo de um botão quando o mouse passa sobre ele.
+
+:active: Esta pseudo-classe é acionada quando um elemento está sendo ativamente clicado ou pressionado pelo usuário. É comumente usada para aplicar estilos temporários durante o clique, como alterar a cor de fundo de um botão enquanto ele está sendo pressionado.
+
+:focus: Esta pseudo-classe é acionada quando um elemento recebe o foco de entrada. Geralmente é usado em elementos interativos, como campos de entrada de formulário, para destacar visualmente qual elemento está atualmente selecionado ou em foco.
+
+:first-child: Esta pseudo-classe é usada para selecionar o primeiro filho de um elemento pai. É útil para aplicar estilos específicos apenas ao primeiro elemento dentro de um contêiner, como tornar o primeiro item de uma lista em negrito.
+
+:last-child: Similar ao :first-child, mas seleciona o último filho de um elemento pai.
+
+:nth-child(n): Esta pseudo-classe seleciona o enésimo filho de um elemento pai, onde "n" é um número ou uma expressão an+b. É útil para selecionar elementos específicos dentro de um contêiner com base em sua posição relativa.
+
+:nth-of-type(n): Similar ao :nth-child, mas seleciona o enésimo elemento de um determinado tipo dentro de um elemento pai. Por exemplo, p:nth-of-type(odd) seleciona todos os parágrafos ímpares dentro de seu contêiner.
+
+:nth-last-child(n): Similar ao :nth-child, mas conta de trás para frente, selecionando o enésimo filho, começando do último.
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+

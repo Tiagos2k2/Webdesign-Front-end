@@ -1,0 +1,132 @@
+Flexbox, também conhecido como Flexible Box Layout, é um modelo de layout em CSS que foi introduzido no CSS3 para facilitar o design responsivo e flexível de layouts em uma página da web. Ele oferece uma maneira mais eficiente e poderosa de distribuir o espaço entre os itens em um contêiner e de alinhá-los de maneira mais previsível em diferentes tamanhos de tela e dispositivos.
+
+Principais conceitos do Flexbox:
+
+Flex Container:
+
+O elemento pai que contém os itens flexíveis é chamado de flex container. Para transformar um elemento em um flex container, você precisa definir a propriedade display como flex ou inline-flex.
+
+Flex Items:
+
+Os elementos filhos diretos de um flex container são chamados de flex items. Esses são os itens flexíveis que serão organizados dentro do contêiner flexível.
+Main Axis e Cross Axis:
+
+O Flexbox tem um conceito de eixo principal (main axis) e eixo transversal (cross axis), que são determinados pela direção em que o flex container está alinhado. O eixo principal é o principal eixo de layout, enquanto o eixo transversal é perpendicular a ele.
+
+Flex Direction:
+
+A propriedade flex-direction determina a direção do eixo principal do flex container. Os valores comuns são row (direção horizontal, padrão), row-reverse (direção horizontal invertida), column (direção vertical) e column-reverse (direção vertical invertida).
+------------------------------------------------
+Justify Content:
+
+A propriedade `justify-content` em CSS é usada no modelo de layout Flexbox para alinhar os itens flexíveis ao longo do eixo principal do contêiner flexível. Ela define como o espaço disponível dentro do contêiner flexível deve ser distribuído entre os itens flexíveis quando há espaço extra ou quando os itens não ocupam todo o espaço disponível.
+
+Existem várias opções para o valor da propriedade `justify-content`, cada uma controlando de maneira diferente o alinhamento dos itens flexíveis ao longo do eixo principal:
+
+1. `flex-start`:
+   - Os itens flexíveis são alinhados ao início do contêiner flexível. O espaço extra, se houver, é distribuído após o último item.
+
+2. `flex-end`:
+   - Os itens flexíveis são alinhados ao final do contêiner flexível. O espaço extra, se houver, é distribuído antes do primeiro item.
+
+3. `center`:
+   - Os itens flexíveis são centralizados ao longo do eixo principal do contêiner flexível. O espaço extra, se houver, é distribuído igualmente antes e depois dos itens.
+
+4. `space-between`:
+   - Os itens flexíveis são distribuídos ao longo do eixo principal do contêiner flexível com espaçamento igual entre eles. Não há espaçamento antes do primeiro item ou depois do último item.
+
+5. `space-around`:
+   - Os itens flexíveis são distribuídos ao longo do eixo principal do contêiner flexível com espaçamento igual em torno deles. Isso significa que há metade do espaço antes do primeiro item e metade do espaço depois do último item.
+
+6. `space-evenly`:
+   - Os itens flexíveis são distribuídos ao longo do eixo principal do contêiner flexível com espaçamento igual entre eles, incluindo o espaço antes do primeiro item e depois do último item.
+
+Por exemplo, para alinhar os itens flexíveis ao centro do contêiner flexível, você usaria:
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+}
+```
+
+Essa configuração é especialmente útil para criar layouts flexíveis e responsivos, permitindo controlar como os itens flexíveis são distribuídos e alinhados dentro de um contêiner flexível.
+----------------------------------------------
+Align Items:
+
+A propriedade `align-items` em CSS é usada no modelo de layout Flexbox para alinhar os itens flexíveis ao longo do eixo transversal do contêiner flexível. Ela controla o alinhamento vertical dos itens flexíveis dentro do contêiner flexível.
+
+A propriedade `align-items` tem os seguintes valores possíveis:
+
+1. `flex-start`:
+   - Os itens flexíveis são alinhados ao início do eixo transversal do contêiner flexível.
+
+2. `flex-end`:
+   - Os itens flexíveis são alinhados ao final do eixo transversal do contêiner flexível.
+
+3. `center`:
+   - Os itens flexíveis são centralizados ao longo do eixo transversal do contêiner flexível.
+
+4. `baseline`:
+   - Os itens flexíveis são alinhados pela linha de base, que é a linha onde o texto de cada item seria exibido.
+
+5. `stretch`:
+   - Os itens flexíveis são esticados para preencher todo o espaço ao longo do eixo transversal do contêiner flexível.
+
+Por exemplo, para alinhar os itens flexíveis ao centro do contêiner flexível verticalmente, você usaria:
+
+```css
+.container {
+    display: flex;
+    align-items: center;
+}
+```
+
+Essa configuração é útil para controlar como os itens flexíveis são alinhados verticalmente dentro de um contêiner flexível e é especialmente útil para criar layouts responsivos e flexíveis em uma página da web.
+----------------------------------------------
+align-content:
+
+A propriedade `align-content` em CSS é semelhante à propriedade `justify-content`, mas em vez de alinhar os itens flexíveis ao longo do eixo principal do contêiner flexível, ela alinha o conteúdo de várias linhas ao longo do eixo transversal. Essa propriedade só tem efeito quando há várias linhas de itens dentro do contêiner flexível e o espaço entre essas linhas é maior do que o tamanho dos itens flexíveis.
+
+A propriedade `align-content` possui os mesmos valores possíveis da propriedade `justify-content`, mas em vez de afetar o alinhamento dos itens flexíveis ao longo do eixo principal, ela afeta o alinhamento do conteúdo das linhas ao longo do eixo transversal. Os valores incluem:
+
+1. `flex-start`: Alinha o conteúdo das linhas ao início do eixo transversal do contêiner flexível.
+2. `flex-end`: Alinha o conteúdo das linhas ao final do eixo transversal do contêiner flexível.
+3. `center`: Centraliza o conteúdo das linhas ao longo do eixo transversal do contêiner flexível.
+4. `space-between`: Distribui uniformemente o espaço restante entre as linhas, colocando espaço igual entre as linhas.
+5. `space-around`: Distribui uniformemente o espaço restante entre as linhas, colocando metade do espaço antes e depois das linhas.
+6. `stretch`: Estica o conteúdo das linhas para preencher todo o espaço disponível ao longo do eixo transversal do contêiner flexível.
+
+Por exemplo, para alinhar o conteúdo das linhas ao centro do contêiner flexível ao longo do eixo transversal, você pode usar:
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os itens sejam envolvidos em várias linhas */
+    align-content: center;
+}
+```
+
+Essa configuração é útil quando você tem vários itens flexíveis que são dispostos em várias linhas dentro de um contêiner flexível e deseja alinhar essas linhas ao longo do eixo transversal de maneira específica.
+-------------------------------------------
+Flex:
+
+A propriedade flex é uma abreviação para flex-grow, flex-shrink e flex-basis, que são usados para especificar como os itens flexíveis devem crescer ou encolher para preencher o espaço disponível.
+Flexbox é uma ferramenta poderosa para criar layouts responsivos e dinâmicos em uma página da web. Ele simplifica muitos aspectos do design de layout que anteriormente eram complicados de se alcançar com técnicas mais antigas em CSS.
+
+------------------------------------------------
+
+A propriedade `flex-wrap` em CSS é usada em conjunção com o modelo de layout Flexbox para controlar se os itens flexíveis dentro de um contêiner flexível são permitidos ou não a quebra em várias linhas. Quando `flex-wrap` é definido como `nowrap`, os itens flexíveis são forçados a permanecerem em uma única linha, independentemente do tamanho do contêiner.
+
+Aqui está como você pode usar `flex-wrap: nowrap` em um contêiner flexível:
+
+```css
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+```
+
+Neste exemplo, o elemento com a classe `.container` se torna um contêiner flexível e os itens flexíveis dentro dele não serão permitidos a quebrar em várias linhas. Se o espaço disponível no contêiner não for suficiente para todos os itens, eles serão redimensionados para caber na mesma linha.
+
+Essa configuração é útil quando você deseja que os itens flexíveis permaneçam em uma linha única, mesmo que o espaço disponível seja insuficiente para acomodá-los sem quebrar em várias linhas. Isso é especialmente útil em layouts responsivos, onde você deseja controlar o comportamento dos itens flexíveis em diferentes tamanhos de tela.

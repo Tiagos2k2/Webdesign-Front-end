@@ -1,0 +1,28 @@
+Existem vários tipos de formatos de imagem comuns utilizados na web, cada um com suas próprias características, vantagens e desvantagens. Aqui estão alguns dos tipos de imagem mais populares:
+
+1. **JPEG (ou JPG)**:
+   - O formato JPEG é amplamente utilizado para fotografias e imagens com tons de cores complexos.
+   - Ele utiliza compressão com perdas, o que significa que pode reduzir o tamanho do arquivo, mas pode resultar em perda de qualidade.
+   - Ideal para imagens com gradientes suaves ou fotografias.
+
+2. **PNG**:
+   - O formato PNG é amplamente utilizado para gráficos e imagens com transparência.
+   - Ele suporta transparência alfa, o que permite que partes da imagem sejam completamente transparentes.
+   - É um formato sem perdas, o que significa que mantém a qualidade da imagem, mas pode resultar em arquivos maiores do que JPEG.
+
+3. **GIF**:
+   - O formato GIF é adequado para imagens animadas de baixa complexidade, como ícones animados ou pequenas animações.
+   - Ele suporta animações simples e pode conter uma paleta de cores limitada (256 cores).
+   - É amplamente suportado pelos navegadores e é adequado para imagens pequenas e animadas.
+
+4. **SVG (Scalable Vector Graphics)**:
+   - SVG é um formato baseado em vetores que descreve gráficos usando vetores matemáticos, em vez de pixels, o que permite escalonamento sem perda de qualidade.
+   - É adequado para gráficos simples, ícones e logotipos que precisam ser redimensionados em diferentes tamanhos de tela.
+   - Suporta interatividade e animações.
+
+5. **WebP**:
+   - O formato WebP é uma alternativa moderna ao JPEG e ao PNG, desenvolvida pelo Google.
+   - Ele oferece compressão com perdas e sem perdas, resultando em arquivos menores e mantendo uma boa qualidade de imagem.
+   - Pode ser uma opção eficiente para imagens na web, especialmente em páginas que visam alto desempenho.
+
+Cada tipo de imagem tem suas próprias características e é adequado para diferentes tipos de conteúdo. A escolha do formato certo depende das necessidades específicas de sua aplicação, incluindo qualidade desejada, suporte de navegador, necessidades de transparência e se a imagem é estática ou animada.

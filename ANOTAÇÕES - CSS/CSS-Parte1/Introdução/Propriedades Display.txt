@@ -1,0 +1,15 @@
+A propriedade display em CSS especifica como um elemento deve ser exibido em uma página da web. Ela controla o modelo de caixa usado para renderizar o elemento, determinando como ele é tratado em relação a outros elementos na página e como ele se comporta em termos de layout.
+
+Existem vários valores possíveis para a propriedade display, cada um com seu próprio comportamento. Alguns dos valores mais comuns incluem:
+
+block: Define o elemento como um bloco. Isso significa que ele sempre começa em uma nova linha e ocupa toda a largura disponível do contêiner pai. Elementos de bloco também aceitam propriedades de largura, altura, margens e preenchimento.
+
+inline: Define o elemento como uma linha em um texto. Elementos inline não iniciam em uma nova linha e apenas ocupam a largura necessária para seu conteúdo. Eles não aceitam propriedades de largura, altura, margens ou preenchimento horizontalmente, apenas verticalmente.
+
+inline-block: Combina características de elementos inline e block. Elementos inline-block não iniciam em uma nova linha, mas ainda podem ter largura, altura, margens e preenchimento. Eles se comportam como elementos inline em relação à posição em uma linha de texto, mas como elementos block em relação à modelagem de caixa.
+
+none: Esconde completamente o elemento, removendo-o do fluxo do documento. Ele não ocupará espaço na página e não será renderizado.
+
+flex: Define um container de layout flexível, permitindo o fácil posicionamento e alinhamento de elementos filhos. O container pai torna-se um contexto de formatação flexível para os seus filhos.
+
+grid: Define um container de layout de grade, permitindo a criação de layouts complexos alinhando os elementos em linhas e colunas.

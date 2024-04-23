@@ -1,0 +1,67 @@
+As unidades de medida em CSS são usadas para definir tamanhos e distâncias em propriedades que requerem valores numéricos, como largura, altura, margens, preenchimentos, etc. Existem diferentes tipos de unidades de medida em CSS, e cada uma tem seu próprio propósito e aplicação. Aqui estão os principais tipos de unidades de medida:
+
+### Unidades de Medida Absolutas:
+
+1. **px (pixels)**:
+   - A unidade `px` é uma unidade de medida absoluta que corresponde a um único pixel na tela. Ela oferece precisão e é frequentemente usada para definir tamanhos exatos de elementos.
+
+   ```css
+   div {
+       width: 200px;
+       height: 150px;
+   }
+   ```
+
+2. **pt (points)**:
+   - A unidade `pt` é usada principalmente para impressão e corresponde a 1/72 de polegada. Ela é menos comum em design web, mas ainda é usada em contextos de impressão e design gráfico.
+
+### Unidades de Medida Relativas:
+
+1. **% (percent)**:
+   - A unidade `%` é uma unidade de medida relativa que é calculada em relação ao valor do elemento pai. Por exemplo, se o elemento pai tiver uma largura de 500px e um filho tiver uma largura de 50%, o filho terá uma largura de 250px.
+
+   ```css
+   .container {
+       width: 100%; /* ocupa 100% da largura do elemento pai */
+   }
+   ```
+
+2. **em**:
+   - A unidade `em` é relativa ao tamanho da fonte do elemento. Se o tamanho da fonte do elemento for 16px e você definir `1em`, será equivalente a 16px.
+
+   ```css
+   p {
+       font-size: 1.5em; /* tamanho da fonte será 1,5 vezes maior que o tamanho da fonte do elemento pai */
+   }
+   ```
+
+3. **rem**:
+   - A unidade `rem` é semelhante à unidade `em`, mas é relativa ao tamanho da fonte do elemento raiz (normalmente o elemento `<html>`). Isso torna mais fácil controlar o tamanho dos elementos com base em um ponto de partida consistente.
+
+   ```css
+   body {
+       font-size: 16px; /* tamanho base da fonte */
+   }
+
+   div {
+       font-size: 1.5rem; /* tamanho da fonte será 1,5 vezes maior que o tamanho base da fonte */
+   }
+   ```
+
+4. **vw (viewport width) e vh (viewport height)**:
+   - As unidades `vw` e `vh` são relativas às dimensões da janela de visualização (viewport). `1vw` corresponde a 1% da largura da janela de visualização, enquanto `1vh` corresponde a 1% da altura da janela de visualização.
+
+   ```css
+   .full-width {
+       width: 100vw; /* ocupa 100% da largura da janela de visualização */
+   }
+
+   .half-height {
+       height: 50vh; /* ocupa 50% da altura da janela de visualização */
+   }
+   ```
+
+5. **vmin e vmax**:
+   - As unidades `vmin` e `vmax` são relativas à dimensão mínima ou máxima da janela de visualização. `1vmin` é igual ao menor valor entre `1vw` e `1vh`, enquanto `1vmax` é igual ao maior valor entre `1vw` e `1vh`.
+
+Essas são algumas das unidades de medida mais comuns em CSS. A escolha da unidade adequada depende do contexto e do efeito desejado. As unidades relativas são frequentemente preferidas em design responsivo, pois ajudam a criar layouts flexíveis que se adaptam a diferentes tamanhos de tela.

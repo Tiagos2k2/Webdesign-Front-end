@@ -1,0 +1,35 @@
+As tags semânticas em HTML são elementos que fornecem significado e estrutura ao conteúdo da página da web, tornando mais claro para os navegadores, mecanismos de busca e desenvolvedores a função e o propósito de cada parte do conteúdo. Aqui estão algumas das principais tags semânticas em HTML5:
+
+1. `<header>`:
+   - Define o cabeçalho de uma seção ou de todo o documento.
+   - Usado para elementos introdutórios, como logotipos, menus de navegação e títulos principais.
+
+2. `<nav>`:
+   - Define uma seção de navegação.
+   - Usado para agrupar links de navegação principal ou secundária.
+
+3. `<main>`:
+   - Define o conteúdo principal da página.
+   - Usado para envolver o conteúdo principal da página, excluindo cabeçalhos, rodapés e barras laterais.
+
+4. `<section>`:
+   - Define uma seção genérica de conteúdo em um documento.
+   - Pode ser usado para agrupar conteúdo relacionado dentro de uma página.
+
+5. `<article>`:
+   - Define um conteúdo independente e autossuficiente que pode ser reutilizado ou distribuído separadamente de outros conteúdos.
+   - Geralmente usado para posts de blog, artigos de notícias, comentários, etc.
+
+6. `<aside>`:
+   - Define um conteúdo relacionado, mas que é separado do conteúdo principal da página.
+   - Usado para barras laterais, publicidade, links relacionados, etc.
+
+7. `<footer>`:
+   - Define o rodapé de uma seção ou de todo o documento.
+   - Usado para informações de contato, links para redes sociais, direitos autorais, etc.
+
+8. `<figure>` e `<figcaption>`:
+   - `<figure>` é usado para envolver qualquer conteúdo que ilustre um conceito, como imagens, gráficos, fotos, vídeos, etc.
+   - `<figcaption>` é usado para fornecer uma legenda ou descrição para o conteúdo envolvido em `<figure>`.
+
+O uso adequado dessas tags semânticas não apenas melhora a acessibilidade e a usabilidade da página da web, mas também fornece uma estrutura clara e compreensível para os mecanismos de busca e outros processadores de conteúdo. Isso pode melhorar a classificação nos resultados de pesquisa e a experiência geral do usuário.

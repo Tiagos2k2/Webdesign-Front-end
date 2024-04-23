@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            width: 80%;
+            margin: auto;
+            background-color: beige;
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: rgb(182, 172, 160);
+            border: 2px solid rgb(182, 172, 160);
+            padding: 16px;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <caption>Tabela de preço de cursos</caption>
+
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td rowspan="3">Desing</td>
+                <td>Photoshop</td>
+                <td>1.000,00</td>
+            <tr>
+                
+                <td>Adobe</td>
+                <td>1.000,00</td>
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>1.000,00</td>
+            </tr>
+            </tr>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>Python</td>
+                <td>1.000,00</td>
+            <tr>
+                <td>Java</td>
+                <td>1.000,00</td>
+            <tr>
+                <td>PHP</td>
+                <td>1.000,00</td>
+            <tr>
+                <td>C#</td>
+                <td>1.000,00</td>
+            </tr>
+            </tr>
+            </tr>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos sem previo aviso</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

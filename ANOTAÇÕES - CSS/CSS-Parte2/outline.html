@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+
+    <style>
+        .div1 {
+            background-color: yellow;
+            width: 200px;
+            height: 100px;
+
+            outline: 4px solid black;
+            outline-offset: 16px; /* Espaçamento adionado na parte de fora do outline*/
+            box-sizing: border-box;
+
+            margin: 100px auto;
+        }
+
+        div:hover{
+            outline: 10px solid black;
+        }
+
+        .div2 {
+            background-color: yellow;
+            width: 200px;
+            height: 100px;
+
+            border: 10px solid black;
+            box-sizing: border-box;
+
+            margin: 100px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">Outline</div>
+    <div class="div2">Outline</div>
+</body>
+</html>

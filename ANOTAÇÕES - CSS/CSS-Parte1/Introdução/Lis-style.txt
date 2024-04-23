@@ -1,0 +1,16 @@
+ A propriedade list-style é usada para definir o estilo da lista de itens em elementos <ul> (listas não ordenadas) e <ol> (listas ordenadas).
+
+list-style: type position image;
+
+type: Define o estilo de marcador da lista. Pode ser disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-alpha, upper-alpha, none, entre outros.
+
+position: Define a posição do marcador em relação ao texto do item da lista. Pode ser inside (dentro), outside (fora) ou initial.
+
+image: Define uma imagem personalizada como marcador da lista. Você pode especificar o URL da imagem, como url('caminho_da_imagem'), ou none para remover o marcador padrão.
+
+Por exemplo:
+
+ul {
+    list-style: square inside url('caminho/para/imagem.png');
+}
+

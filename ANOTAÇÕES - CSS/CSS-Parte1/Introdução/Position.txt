@@ -1,0 +1,43 @@
+A propriedade `position` em CSS é usada para controlar o posicionamento de um elemento em uma página da web. Ela oferece diferentes métodos de posicionamento que permitem posicionar elementos de forma absoluta, relativa, fixa ou pegajosa.
+
+Aqui estão os valores possíveis para a propriedade `position`:
+
+1. `static`:
+   - Este é o valor padrão. O elemento é posicionado de acordo com o fluxo normal do documento. Nesse modo, as propriedades `top`, `right`, `bottom` e `left` não têm efeito.
+
+2. `relative`:
+   - O elemento é posicionado relativamente ao seu posicionamento normal no fluxo do documento. Isso significa que você pode usar as propriedades `top`, `right`, `bottom` e `left` para mover o elemento em relação à sua posição normal.
+
+3. `absolute`:
+   - O elemento é removido do fluxo normal do documento e é posicionado em relação ao seu primeiro elemento pai que não seja `static`. Se nenhum elemento pai satisfizer essa condição, ele será posicionado em relação ao próprio documento. As propriedades `top`, `right`, `bottom` e `left` são usadas para especificar a posição do elemento.
+
+4. `fixed`:
+   - O elemento é removido do fluxo normal do documento e é posicionado em relação à janela do navegador, ou seja, ele permanecerá fixo na tela mesmo quando o usuário rolar a página. As propriedades `top`, `right`, `bottom` e `left` são usadas para especificar a posição do elemento.
+
+5. `sticky`:
+   - O elemento é tratado como `relative` até que seu contêiner atinja um determinado ponto de rolagem, momento em que ele se torna `fixed`. Isso cria um comportamento de "adesão" onde o elemento permanece fixo até que o contêiner volte à sua posição inicial.
+
+Exemplo de uso:
+
+```css
+/* Posicionamento absoluto */
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Posicionamento fixo */
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+```
+
+```html
+<div class="absolute">Posicionamento absoluto</div>
+<div class="fixed">Posicionamento fixo</div>
+```
+
+Essa é uma propriedade importante para controlar o layout e o design de uma página da web, permitindo posicionar elementos de forma precisa e criar layouts complexos.

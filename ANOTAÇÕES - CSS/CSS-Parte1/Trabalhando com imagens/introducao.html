@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+
+    <style>
+
+        body{
+            font-size: 22px;
+            font-family: sans-serif;
+            width: 700px;
+            margin: auto;
+
+            background-image: url(imagens/bg.jpg); /*Diretório da imagem*/
+            background-repeat: no-repeat;/*Não repetir a imagem*/
+            background-attachment: fixed;/*fixar a imagem ao rolar a página*/
+            background-size: cover;/*Tamanho da imagem*/
+            background-position: right bottom;/*Posição da imagem*/
+        }
+        img{
+            width: 400px;
+        }
+
+        p{
+            line-height: 1.5; /*Espaçamento entre os textos*/
+            text-align: justify;/*O texto se adqua a linha*/
+        }
+
+        .img-html{
+            float: left; /*Flutuar para a esquerda*/
+        }
+
+        .img-css{
+            float: right; /*Flutuar para a direita*/
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Trabalhando com imagens</h1>
+
+    <h2>Imagens vetoriais vc bitmap</h2>
+
+    <img src="./imagens/logo_ser-frontend-ico.png" class="img-logo" alt="logotipo teste">
+    <br>
+    <img src="./imagens/logo_ser-frontend-ico.svg"class="img-logo" alt="Teste">
+
+    <h2>Imagens transparentes</h2>
+
+    <img src="./imagens/logo_ser-frontend-ico-transparente.gif" alt="Gifteste">
+    <br>
+    <img src="imagens/logo_ser-frontend-ico-transparente.png" alt="Transteste">
+
+    <h2>gif animado</h2>
+
+    <img src="imagens/walk.gif" alt="">
+    
+    <h2>Float</h2>
+
+    <img src="imagens/css3.png" alt="" class="img-css">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto deserunt mollitia tempora odit velit iste soluta voluptate facilis esse alias corrupti, explicabo perspiciatis maiores, harum a. Doloribus, esse fugit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium soluta atque aspernatur culpa. Pariatur temporibus cum quaerat distinctio deserunt soluta quae provident, reiciendis quo incidunt sed alias, molestias aliquid rerum!</p>
+
+    <img src="imagens/html5.png" alt="" class="img-html">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium soluta atque aspernatur culpa. Pariatur temporibus cum quaerat distinctio deserunt soluta quae provident, reiciendis quo incidunt sed alias, molestias aliquid rerum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium soluta atque aspernatur culpa. Pariatur temporibus cum quaerat distinctio deserunt soluta quae provident, reiciendis quo incidunt sed alias, molestias aliquid rerum!</p>
+</body>
+</html>

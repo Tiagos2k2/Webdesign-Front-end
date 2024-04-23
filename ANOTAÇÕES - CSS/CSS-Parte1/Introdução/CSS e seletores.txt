@@ -1,0 +1,39 @@
+Seletores de classe
+
+HTML
+<p class="Nunes"> Tiago </p>
+
+CSS
+.Nunes {}
+
+Seletores de ID
+
+HTML
+<p id="Nunes"> Tiago </p>
+
+CSS
+#Nunes {}
+
+Diferença entre os dois: O ID tem que ser unico valor por página. 
+Já a Class, pode se repertir na mesma página. 
+
+-----------------------------------------------------
+
+Fonts
+
+font-family - Fonte para as palavras
+font-size - Tamanho da fonte
+font-style - Estilo da fonte
+font-weight - Fonte em negrito
+
+Text
+
+text-align - Direção da fonte
+text-decoration - Sublinhar as palavras - linhas
+text-indent - coloca um espaço em cada palavra
+text-transform - "uppercase" - palavras em maiuculas
+
+-----------------------------------------------------
+Comentar linhas ctrl+~
+----------------------------------------------------
+

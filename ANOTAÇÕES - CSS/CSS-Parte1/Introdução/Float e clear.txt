@@ -1,0 +1,47 @@
+As propriedades `float` e `clear` são usadas em CSS para controlar o posicionamento e o layout de elementos flutuantes em uma página da web.
+
+### Float:
+A propriedade `float` é usada para tirar um elemento do fluxo normal do documento e movê-lo para a esquerda ou para a direita dentro do seu contêiner. Isso permite que outros elementos fluam ao redor do elemento flutuante. O valor da propriedade `float` pode ser `left`, `right`, ou `none` (para voltar ao fluxo normal).
+
+Por exemplo:
+
+```css
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+```
+
+```html
+<div class="float-left">Elemento flutuante à esquerda</div>
+<div class="float-right">Elemento flutuante à direita</div>
+```
+
+### Clear:
+A propriedade `clear` é usada para controlar o comportamento de elementos em relação a elementos flutuantes. Ela define em qual lado de um elemento flutuante não é permitido que outros elementos flutuem. Os valores comuns para `clear` são `left`, `right`, `both` e `none`.
+
+Por exemplo:
+
+```css
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+```
+
+```html
+<div class="float-left">Elemento flutuante à esquerda</div>
+<div class="float-right">Elemento flutuante à direita</div>
+<div class="clear-left">Elemento abaixo do flutuante à esquerda</div>
+<div class="clear-right">Elemento abaixo do flutuante à direita</div>
+```
+
+Neste exemplo, os elementos com a classe `clear-left` serão posicionados abaixo de qualquer elemento flutuante à esquerda, enquanto os elementos com a classe `clear-right` serão posicionados abaixo de qualquer elemento flutuante à direita.
+
+É importante entender que o uso excessivo de flutuação (`float`) pode causar problemas de layout, especialmente quando não é acompanhado corretamente pela propriedade `clear`. Em muitos casos, é preferível usar técnicas de layout modernas, como Flexbox ou Grid, em vez de flutuação para criar layouts complexos.

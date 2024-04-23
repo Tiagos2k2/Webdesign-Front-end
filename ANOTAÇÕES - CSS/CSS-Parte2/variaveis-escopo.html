@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váriavel</title>
+
+    <style>
+        :root{
+            --color: red;
+        }
+
+        p{
+            color: var(--color);
+        }
+
+        .container{
+            --color: yellow;
+        }
+        
+        .div1{
+            --color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <p>teste</p>
+</body>
+</html>

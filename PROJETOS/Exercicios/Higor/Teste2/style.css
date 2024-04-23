@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #FFF2E7;
+}
+
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF2E7;
+}
+
+ul {
+    text-decoration: none;
+}
+
+nav {
+    background: #0865bd;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    Border-radius: 10px 10px 10px 10px;
+}
+
+
+.logo {
+    font-family: Teko;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+   /*letter-spacing: 2px;*/
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7rem;
+    gap: 5.5rem;
+    color: #FFF2E7;
+    list-style-type: none;
+    padding: 10px;
+}
+
+li:hover{
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.home{
+    background-color: rgb(113, 117, 117);
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+
+}
+
+.projetos{
+    padding: 10px;
+    margin: auto;
+}
+
+.ferramentas{
+    padding: 10px;
+    margin: auto;
+}
+
+.sobre{
+    padding: 10px;
+    margin: auto;
+}
+
+a.eu{
+    pointer-events: none;
+}

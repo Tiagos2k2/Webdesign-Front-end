@@ -1,0 +1,51 @@
+width - Largura
+height - Altura
+
+% - Vai ser em comparação com o elemento pai
+-----------------------------------------------
+padding - Refere-se ao espaço entre o conteúdo de um elemento e suas bordas. Ele pode ser aplicado em todos os lados do elemento (topo, direita, baixo, esquerda) ou em cada lado individualmente.
+
+padding: 10px; /* Aplica 10 pixels de padding em todos os lados */
+padding: 10px 20px; /* Aplica 10 pixels de padding no topo e na base, e 20 pixels nos lados direito e esquerdo */
+padding: 10px 20px 15px; /* Aplica 10 pixels de padding no topo, 20 pixels nos lados direito e esquerdo, e 15 pixels na base */
+padding: 10px 20px 15px 5px; /* Aplica 10 pixels de padding no topo, 20 pixels no lado direito, 15 pixels na base, e 5 pixels no lado esquerdo */
+
+---------------------------------------------------
+margin - controla o espaço ao redor de um elemento, mas ao contrário do padding, que afeta o espaço entre o conteúdo e as bordas do elemento, a margem afeta o espaço entre o elemento e os elementos vizinhos.
+
+margin: 10px; /* Aplica 10 pixels de margem em todos os lados */
+margin: 10px 20px; /* Aplica 10 pixels de margem no topo e na base, e 20 pixels nos lados direito e esquerdo */
+margin: 10px 20px 15px; /* Aplica 10 pixels de margem no topo, 20 pixels nos lados direito e esquerdo, e 15 pixels na base */
+margin: 10px 20px 15px 5px; /* Aplica 10 pixels de margem no topo, 20 pixels no lado direito, 15 pixels na base, e 5 pixels no lado esquerdo */
+
+--------------------------------------------------
+border - é usada para definir a borda de um elemento HTML. A borda é uma linha que envolve o conteúdo de um elemento, criando assim uma distinção visual entre o conteúdo do elemento e o resto da página.
+
+border: largura estilo cor;
+
+largura: Especifica a largura da borda, que pode ser definida em pixels (por exemplo, 2px), em centímetros (cm), em porcentagem (%), ou usando valores específicos como thin, medium e thick.
+
+estilo: Define o estilo da borda, como solid (sólida), dashed (tracejada), dotted (pontilhada), double (dupla), entre outros.
+
+cor: Especifica a cor da borda, que pode ser definida usando nomes de cores, códigos hexadecimais (#RRGGBB), RGB (rgb(255, 0, 0)), entre outros formatos de cor.
+
+----------------------------------------------------
+
+outline - é semelhante à propriedade border, mas é usada para criar uma linha de contorno ao redor de um elemento, sem afetar o layout do documento. Enquanto a border afeta o tamanho total do elemento, incluindo sua largura e altura, a outline é desenhada fora da border, não afetando o layout.
+
+outline: largura estilo cor;
+
+largura: Define a largura do contorno. Assim como na border, pode ser um valor em pixels (px), em centímetros (cm), em porcentagem (%), ou palavras-chave específicas como thin, medium e thick.
+
+estilo: Define o estilo do contorno, como dotted (pontilhado), dashed (tracejado), solid (sólido), entre outros.
+
+cor: Especifica a cor do contorno, usando nomes de cores, códigos hexadecimais (#RRGGBB), RGB (rgb(255, 0, 0)), entre outros formatos de cor.
+
+----------------------------------------------------
+box-sizing - determina como o tamanho total de um elemento é calculado, levando em consideração ou não a largura e altura das bordas e do preenchimento (padding).
+
+Existem dois valores principais para a propriedade box-sizing:
+
+content-box (valor padrão): Com esse valor, o tamanho do elemento é calculado incluindo apenas o conteúdo real do elemento. As bordas e o preenchimento (padding) são adicionados ao tamanho especificado do elemento. Isso significa que, se você definir um elemento com uma largura de 200 pixels e adicionar uma borda de 10 pixels e um preenchimento de 20 pixels, o elemento terá uma largura total de 240 pixels (200 pixels de conteúdo + 10 pixels de borda à direita + 10 pixels de borda à esquerda + 20 pixels de preenchimento à direita + 20 pixels de preenchimento à esquerda).
+
+border-box: Com esse valor, o tamanho do elemento é calculado incluindo tanto o conteúdo real do elemento quanto as bordas e o preenchimento. Isso significa que a largura especificada do elemento inclui a largura da borda e o preenchimento. Por exemplo, se você definir um elemento com uma largura de 200 pixels e adicionar uma borda de 10 pixels e um preenchimento de 20 pixels, o elemento terá uma largura total de 200 pixels (a largura especificada inclui automaticamente a borda e o preenchimento).
