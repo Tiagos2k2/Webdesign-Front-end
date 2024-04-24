@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Caminho do diretório do seu projeto
-DIR="/c/Users/tiago.silva.DESKTOP/Documents/Tiago Nunes/Desenvolvimento/Estudos/Webdesign Front-end"
+DIR="/c/Users/GAMERX/Documents/ESTUDOS/Webdesign-Front-end"
 
 cd $DIR
 
