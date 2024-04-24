@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            padding-bottom: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+
+            <label for="">Email</label>
+            <input type="email" name="email" required>
+            <br><br>
+
+            <label for="">Quantidade de filhos</label>
+
+            <input type="number" id="filhos" min="0" max="1000">
+            
+            <br><br>
+            <input type="date" min="2022-01-15">
+
+            <br><br>
+            Possui atividades extras?
+            <label for="">
+                <input type="radio" name="atv" value="s">Sim
+                
+            </label>
+
+            <label for="">
+                <input type="radio" name="atv" value="n">Não
+            </label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+            
+            <label for="">
+                <input type="checkbox" name="interesse" value="html">HTML
+            </label>
+            
+            <label for="">
+                <input type="checkbox" name="interesse" value="css">CSS
+            </label>
+            
+            <label for="">
+                <input type="checkbox" name="interesse" value="js">JS
+            </label>
+            
+            <label for="">
+                <input type="checkbox" name="interesse" value="java">JAVA
+            </label>
+
+            <br><br>
+            
+            <label for="">escolha
+            <select name="linguagem" id="" required>
+
+                <optgroup label="front">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</
+                </optgroup>
+                <optgroup label="Back">
+                    <option value="js">JS</option>
+                    <option value="node">NODE</
+                </optgroup>
+            </select>
+
+            <input type="text" list="linguagem-list">
+            <datalist id="linguagem-list">
+                <option value="HTML">
+                    <option value="CSS">
+                        <option value="JSS">
+            </datalist>
+        </label>
+        </fieldset>
+
+        <br><br><br>
+        <input type="submit" value="mandar">
+
+    </form>
+</body>
+</html>
