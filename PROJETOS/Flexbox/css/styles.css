@@ -1,0 +1,20 @@
+.container{
+    background-color: #ccc;
+    height: 200px;
+    display: flex;
+    flex-direction: row; /*Direção dos objetos*/
+    flex-wrap: wrap; /*Não permite a quebra de linha*/
+    /*flex-flow: row wrap-reverse; Definir os valores dos flex-direction e flex-wrap*/
+    justify-content:flex-start; /*Fazer um alinhamento horizontal*/ 
+    align-items:stretch; /*Fazer um alinhamento vertical*/
+    align-content:stretch; /*Fazer um alinhamento na vertical, quando os items estiverem em quebra*/
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
