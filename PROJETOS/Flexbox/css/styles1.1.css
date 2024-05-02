@@ -100,3 +100,232 @@ header li:last-child {
     .hero h3 {font-size: 1.5rem;}
 }
 
+/*Conheça o hotel*/
+
+.conheca-o-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.conheca-o-hotel h3 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.conheca-o-hotel p {
+    color: black;
+    max-height: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.conheca-o-hotel hr {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 70px;
+    border: none !important;
+}
+
+.conheca-o-hotel .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca-o-hotel .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheca-o-hotel .grid li.small {
+    flex-basis: 40%;
+}
+
+.conheca-o-hotel .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+/*Caracteristas*/
+
+.caract {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.caract h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.caract p {
+    color: #fff;
+    max-height: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.caract hr {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    border: none !important;
+}
+
+.caract .grid {
+    width: 100%;
+    display: flex;
+}
+
+.caract .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.caract .grid li i {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.caract .grid li h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.caract .grid li p {
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+    .caract .grid {
+        flex-direction: column;
+    }
+}
+
+/*Newsland */
+
+.newsland {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.newsland h3 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.newsland p {
+    color: black;
+    max-height: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.newsland hr {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 70px;
+    border: none !important;
+}
+
+.newsland form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsland input {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px; 
+    margin-right: 15px;
+    flex: 1;
+}
+
+.newsland button {
+    padding: 15px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: none !important;
+    border-radius: 4px;
+    cursor: pointer !important;
+}
+
+@media (max-width: 700px) {
+    .newsland input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*Footer*/
+
+footer {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-color: black;
+    padding: 50px 0;
+    
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+footer ul li i {
+    gap: 10px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
