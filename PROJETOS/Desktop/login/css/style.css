@@ -1,0 +1,99 @@
+:root {
+    --login-primary-color: #C52121;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--login-primary-color);
+}
+
+.form {
+    width: 80%;
+    max-width: 32rem;
+    background-color: #E5EBEB;
+}
+
+.form_fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 2rem;
+}
+
+.form_title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--login-primary-color);
+    padding-top: 2rem;;
+}
+
+.form__label {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.form__input {
+    padding: .5rem 0;
+    font-size: 1rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--login-primary-color);
+    margin-bottom: .8rem;
+    outline: none;
+    transition: padding-left .07s linear;
+}
+
+.form__input:focus {
+    outline: 2px solid var(--login-primary-color);
+    padding-left: .3rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.primary-color {
+    background-color: var(--login-primary-color);
+    color: #fff;
+}
+
+.secundary-color {
+    color: var(--login-primary-color);
+}
+
+.form__action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__action__asied {
+    font-size: 1rem;
+    flex-grow: 1;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.form__action__asied a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
