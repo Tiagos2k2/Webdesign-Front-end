@@ -1,0 +1,39 @@
+/*Todos os primeiros filhos (primeira criança) que são elementos div terão sua cor de texto definida como vermelho.*/
+div :first-child{
+    color: red;
+}
+
+/*Todos os últimos filhos (última criança) que são elementos p terão sua cor de texto definida como verde.*/
+p:last-child{
+    color: green;
+}
+
+/*O segundo filho (segunda criança) que é um elemento p terá sua cor de fundo definida como marrom.*/
+p:nth-child(2){
+    background-color: brown;
+}
+
+/*O primeiro elemento p do tipo dentro de seu pai terá sua cor de fundo definida como um tom específico de azul esverdeado.*/
+p:first-of-type{
+    background-color: rgb(44, 114, 114);
+}
+
+/*O último elemento p do tipo dentro de seu pai terá sua cor de fundo definida como preto.*/
+p:last-of-type{
+    background-color: black;
+}
+
+/*Este seletor está incompleto, deveria especificar um número dentro dos parênteses para indicar qual é o elemento p do tipo contado a partir do final. Presumindo que fosse p:nth-last-of-type(3), isso faria com que o terceiro elemento p do tipo, contado a partir do final, tivesse uma decoração de texto sublinhada.*/
+p:nth-last-of-type(){
+    text-decoration: underline;
+}
+
+/*Todos os filhos pares (segundo, quarto, sexto, etc.) que são elementos li terão sua cor de fundo definida como vermelho.*/
+li:nth-child(even){
+    background-color: red;
+}
+
+li:nth-child(3n+1){
+    background-color: blue;
+    color: white;
+}

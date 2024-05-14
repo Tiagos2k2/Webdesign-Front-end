@@ -1,0 +1,35 @@
+article {
+    outline: 3px solid blue;
+}
+
+/*Todos os que são a dentro de article*/
+
+article a {
+    color: red;
+}
+
+/*Todos que contenham b dentro de a*/
+
+article a > b {
+    color: green;
+}
+
+/*vai colorir o fundo do p descendente de h3*/
+h3 + p {
+    background-color: yellow;
+}
+
+/*Todos os paragrafos descendentes de hr*/
+hr ~ p {
+    border: 2px solid blue;
+}
+
+/*Acessa a classe destaque*/
+.destaque {
+    padding-left: 2rem;
+}
+
+/*Não possuem a classe destaque*/
+p:not(.destaque){
+    background-color: aqua;
+}
