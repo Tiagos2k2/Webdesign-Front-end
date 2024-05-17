@@ -1,0 +1,38 @@
+/* Estilo para links */
+a {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+/* Ícone de nova janela para links com target="_blank" */
+a[target="_blank"]::after {
+    content: url(./imagens/newWindow-icon.png);
+    margin-left: .5em;
+}
+
+/* Ícone de PDF antes do link */
+a[href$=".pdf"]::before {
+    content: url(./imagens/pdf-icon.gif);
+    margin-right: .3em;
+}
+
+/* Estilos para checkboxes */
+input[type="checkbox"]:checked + label {
+    color: green;
+}
+
+/* Estilo para rótulos associados a checkboxes que não estão desabilitadas */
+input[type="checkbox"]:not(:disabled) + label {
+    color: red;
+}
+
+/* Estilo para rótulos associados a checkboxes desabilitadas */
+input[type="checkbox"]:disabled+label {
+    color: blue;
+}
+
+
+/* Fundo de listas aninhadas */
+li li:nth-child(3) {
+    background-color: aqua;
+}

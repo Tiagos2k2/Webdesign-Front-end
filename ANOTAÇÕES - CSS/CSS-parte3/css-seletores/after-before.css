@@ -1,0 +1,33 @@
+/* Adiciona o texto "ANTES" antes do conteúdo de cada <p> */
+p::before {
+    content: "ANTES";
+}
+
+/* Adiciona o texto "Depois" após o conteúdo de cada <p> */
+p::after {
+    content: "Depois";
+}
+
+/* Estiliza todos os <div> com uma borda vermelha, preenchimento e posição relativa */
+div {
+    border: 3px solid red;
+    padding: 1em;
+    position: relative;
+}
+
+/* Remove a margem padrão de todos os <p> */
+p {
+    margin: 0;
+}
+
+/* Adiciona um quadrado aquático no canto inferior direito de cada <div> */
+div::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: aqua;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
