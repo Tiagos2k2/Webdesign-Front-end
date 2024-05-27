@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+/* Estilo para a primeira letra dos parágrafos */
+p::first-letter {
+    font-size: 3em;
+    float: left;
+    margin-right: .2em;
+    line-height: 1em;
+}
+
+/* Estilo para a primeira linha dos parágrafos */
+p::first-line {
+    color: red;
+}
+
+/* Estilo para a seleção de texto */
+::selection {
+    background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime expedita itaque quaerat, quo reiciendis necessitatibus repudiandae repellat dolor laborum ab natus sapiente quas labore obcaecati nemo? Omnis, porro praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime expedita itaque quaerat, quo reiciendis necessitatibus repudiandae repellat dolor laborum ab natus sapiente quas labore obcaecati nemo? Omnis, porro praesentium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime expedita itaque quaerat, quo reiciendis necessitatibus repudiandae repellat dolor laborum ab natus sapiente quas labore obcaecati nemo? Omnis, porro praesentium.</p>
+</body>
+</html>

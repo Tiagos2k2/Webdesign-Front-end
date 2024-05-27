@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+/* Estilo para botões */
+button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-bottom: .5em;
+}
+
+/* Estilo para botões desabilitados */
+button:disabled {
+    opacity: .5;
+}
+
+/* Adiciona conteúdo a parágrafos vazios */
+p:empty::before {
+    content: "paragrafo vazio";
+}
+
+/* Estilos para links em foco ou quando o mouse passa sobre eles */
+a:focus,
+a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilos para inputs de texto que podem ser editados */
+input[type="text"]:read-write {
+    background-color: aquamarine;
+    border: none;
+    padding: .5em;
+}
+
+/* Estilos para inputs de texto desabilitados */
+input[type="text"]:disabled {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para inputs de texto somente leitura que não estão desabilitados */
+input[type="text"]:read-only:not(:disabled) {
+    background-color: rgb(17, 182, 39);
+}
+
+/* Estilo para o placeholder dos inputs de texto */
+input[type="text"]::placeholder {
+    color: rgb(88, 55, 55);
+}
+
+/* Estilo para inputs de texto quando o placeholder é mostrado */
+input[type="text"]:placeholder-shown {
+    background-color: brown;
+}
+
+p:only-child{
+    background-color: red;
+}
+
+p:read-write{
+    border-bottom: 2px solid red;
+}
+    </style>
+</head>
+<body>
+    <div id="top">
+    <a href="#titulo">vai para o titulo</a>
+    <button>Vai</button><br>
+    <button disabled>Vai disabled</button>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit qui impedit assumenda! Nostrum quasi quaerat quod accusantium sint? Aperiam distinctio dolorum reprehenderit magnam eveniet explicabo dolore soluta, quos sunt?</p>
+
+    <p></p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+    </ul>
+
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    
+    <form action="#">
+        <input type="text" value="valor"><br><br>
+        <input type="text" value="valor" disabled><br><br>
+        <input type="text" value="valor" readonly><br><br>
+        <input type="text" placeholder="placeholder"><br><br>
+        <input type="text"><br><br>
+    </form>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <br>
+    </div>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p contenteditable="true">Editavel</p>
+    </div>
+    <div id="titulo">
+        <h1>Titulo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quas tempore explicabo saepe doloremque in eligendi esse quam! Autem dolorum atque tempore ad corrupti. Laborum sunt vero possimus nisi repellendus.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
