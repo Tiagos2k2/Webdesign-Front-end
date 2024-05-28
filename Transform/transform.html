@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+
+/* Estilo para o corpo da página */
+body {
+    /* Adiciona uma margem inferior de 100% da altura da janela de visualização, empurrando o conteúdo para cima,
+       criando espaço adicional na parte inferior da página. */
+    margin-bottom: 100vh;
+}
+
+/* Estilo para divs */
+div {
+    /* Define um contorno de 1px com cor #888 ao redor das divs. */
+    outline: 1px solid #888;
+    /* Define a largura das divs para 200px. */
+    width: 200px;
+    /* Adiciona uma margem de .5em na parte superior e inferior,
+       e centraliza horizontalmente as divs dentro do seu contêiner pai. */
+    margin: .5em auto;
+}
+
+/* Estilo para parágrafos */
+p {
+    /* Define a largura dos parágrafos para 50% do contêiner pai. */
+    width: 50%;
+}
+
+/* Estilo para elementos com a classe "destaque" */
+.destaque {
+    /* Define a cor de fundo dos elementos com a classe "destaque" para amarelo. */
+    background-color: yellow;
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div1 */
+.div1 .destaque {
+    /* Translada o elemento "destaque" 50% em relação à sua posição original no eixo X,
+       centralizando o elemento dentro do seu contêiner pai. */
+    transform: translate(50%);
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div2 */
+.div2 .destaque {
+    /* Define a posição do elemento "destaque" como relativa,
+       permitindo o uso de propriedades de posicionamento como top e left. */
+    position: relative;
+    /* Desloca o elemento "destaque" 25% para a direita em relação à sua posição original. */
+    left: 25%;
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div3 */
+.div3 .destaque {
+    /* Rotaciona o elemento "destaque" em 45 graus no sentido horário em relação ao seu centro. */
+    transform: rotate(45deg);
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div4 */
+.div4 .destaque {
+    /* Escala o elemento "destaque" para 1.5 vezes seu tamanho original em ambos os eixos (horizontal e vertical). */
+    transform: scale(1.5);
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div5 */
+.div5 .destaque {
+    /* Inclina (skews) o elemento "destaque" em 15 graus ao longo do eixo X, distorcendo-o horizontalmente. */
+    transform: skew(15deg);
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div6 */
+.div6 .destaque {
+    /* Translada o elemento "destaque" 150px para a direita e, em seguida, o rotaciona em 45 graus no sentido horário.
+       A origem da transformação é definida como o canto superior esquerdo do elemento. */
+    transform: translate(150px) rotate(45deg);
+    transform-origin: top left;
+}
+
+/* Estilo para elementos com a classe "destaque" dentro de .div7 */
+.div7 .destaque {
+    /* Rotaciona o elemento "destaque" em 45 graus no sentido horário e, em seguida, o translada 150px para a direita.
+       A ordem das transformações importa e afeta o resultado final. */
+    transform: rotate(45deg) translate(150px);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+    </div>
+
+        <div class="div2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+
+        <div class="div3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+ 
+        <div class="div4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+ 
+        <div class="div5">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+
+        <div class="div6">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+
+        <div class="div7">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi neque blanditiis ipsum doloremque assumenda, dolorum facere earum quae nobis excepturi corporis itaque nostrum, alias voluptate voluptas, animi voluptatibus asperiores!</p>
+        </div>   
+</body>
+</html>

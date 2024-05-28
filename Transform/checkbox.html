@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+
+    <style>
+/* Estilo para esconder elementos com a classe "checkbox" */
+.checkbox {
+    display: none;
+}
+
+/* Estilo para o span imediatamente após um elemento "checkbox" */
+.checkbox + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+}
+
+/* Estilo para o span imediatamente após um "checkbox" marcado */
+.checkbox:checked + label span {
+    background-color: aqua;
+    position: relative;
+}
+
+/* Estilo para o pseudo-elemento "before" do span imediatamente após um "checkbox" marcado */
+.checkbox:checked + label span::before {
+    content: "";
+    display: block;
+    border: 2px solid white;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    right: 8px;
+    bottom: 8px;
+    transform: rotate(38deg);
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+/* Estilo para spans dentro de elementos com a classe "lbl" */
+.lbl span {
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    background-color: blue;
+}
+
+/* Estilo para spans imediatamente após checkboxes marcados dentro de elementos com a classe "lbl" */
+.lbl input[type="checkbox"]:checked + span {
+    background-color: aqua;
+    position: relative;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html" class="checkbox">
+    <label for="html">
+        <span></span>
+        Html </label>
+
+    <input type="checkbox" id="css" class="checkbox">
+    <label for="css">
+        <span></span>
+        Css </label>
+
+    <input type="checkbox" id="js" class="checkbox">
+    <label for="js">
+        <span></span>
+        JavaScript </label>
+
+        <hr>
+        
+    <label class="lbl">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+
+    <label class="lbl">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="lbl">
+        <input type="checkbox">
+        <span></span>
+        JavaScript
+    </label>
+
+</body>
+</html>
