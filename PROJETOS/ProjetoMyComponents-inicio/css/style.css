@@ -1,0 +1,39 @@
+:root{
+    --primary-color: #FF7833;
+    --secondary-color: #31333B;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    color: #E7E7E7;
+    background-color: #FF7833;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.main-header{
+    flex: 0 0 26rem;
+    background-color: var(--secondary-color);
+}
+
+main{
+    background-color: #444856;
+}
+
+a{
+    color: inherit;
+}
+
+.main,
+.main-header{
+    font-size: 1.6rem;
+}
+
+.perfil-img{
+    max-width: 10rem;
+}
