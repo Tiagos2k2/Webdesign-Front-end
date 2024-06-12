@@ -274,3 +274,24 @@ input, textarea, select{
 .table-vertical th:not(:last-child){
     border-right: 1px solid var(--secondary-color-dark);
 }
+
+.link-icon{
+    display: inline-block;
+    margin-right: 3rem;
+    transition: color .3s;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.link-icon svg{
+    width: 4rem;
+    height: 4rem;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+    fill: currentColor;
+}
+
+.link-icon:hover{
+    color: var(--primary-color);
+}
