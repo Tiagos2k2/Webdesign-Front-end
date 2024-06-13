@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #000000; /* Define a cor primária como preto */
+    --color-segund: color-mix(in srgb, var(--primary-color), transparent); /* Mistura a cor primária com transparente */
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(transparent 50%, red 60%, blue), url(./imagens/tile.png); /* Gradiente e imagem de fundo */
+    background-attachment: fixed, scroll; /* Define a fixação da imagem de fundo */
+    background-blend-mode: color; /* Modo de mesclagem de cores do fundo */
+}
+
+.cores {
+    width: 80%; /* Define a largura do elemento */
+    border: 8px dashed var(--color-segund); /* Borda tracejada usando a cor secundária */
+    margin: 20px auto; /* Centraliza o elemento horizontalmente e adiciona margem */
+    padding: 20px; /* Adiciona preenchimento interno */
+}
+
+.cores p {
+    margin: 0; /* Remove a margem dos parágrafos dentro do elemento .cores */
+}
+
+section {
+    counter-reset: contador; /* Reseta o contador para o elemento section */
+}
+
+.cores {
+    counter-increment: contador; /* Incrementa o contador para cada elemento .cores */
+}
+
+.cores::before {
+    content: counter(contador); /* Insere o valor do contador antes do conteúdo do elemento .cores */
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: 400; /* Define o peso da fonte */
+}
+
+.cores:nth-of-type(3) {
+    background-color: blue;
+    background-clip: content-box; /* Aplica a cor de fundo apenas ao conteúdo */
+}
+
+.cores:nth-of-type(4) {
+    background-color: hsl(90deg, 100%, 50%);
+    box-shadow: 5px 5px 3px blue; /* Adiciona uma sombra */
+}
+
+.cores:nth-of-type(4):hover {
+    background-color: hsl(90deg, 100%, 40%); /* Muda a cor de fundo ao passar o mouse */
+}
+
+.cores:nth-of-type(5) {
+    background-image: linear-gradient(70deg, blue, transparent),
+                      linear-gradient(to top, green, transparent); /* Define gradientes lineares */
+    background-clip: padding-box; /* Aplica o fundo apenas ao preenchimento */
+}
+
+.cores:nth-of-type(6) {
+    background-image: radial-gradient(blue, green 50%); /* Gradiente radial */
+}
+
+.cores:nth-of-type(7) {
+    background-image: radial-gradient(circle, blue, green 50%); /* Gradiente radial circular */
+}
+
+.cores:nth-of-type(8) {
+    background-image: radial-gradient(circle at left top, blue, red); /* Gradiente radial posicionado no canto superior esquerdo */
+}
+
+.cores:nth-of-type(9) {
+    background-image: radial-gradient(ellipse at 50px 20px, blue, red); /* Gradiente radial elíptico */
+}
+
+.cores:nth-of-type(10) {
+    background-image: radial-gradient(closest-corner at 50px 20px, blue, red); /* Gradiente radial até o canto mais próximo */
+}
+
+.cores:nth-of-type(11) {
+    background-image: radial-gradient(farthest-corner at 50px 20px, blue, red); /* Gradiente radial até o canto mais distante */
+}
+
+.cores:nth-of-type(12) {
+    background-image: radial-gradient(closest-side at 50px 20px, blue, red); /* Gradiente radial até o lado mais próximo */
+}
+
+.cores:nth-of-type(13) {
+    background-image: radial-gradient(farthest-side at 50px 20px, blue, red); /* Gradiente radial até o lado mais distante */
+}
+
+.cores:nth-of-type(14) {
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, red); /* Gradiente radial circular até o lado mais distante */
+}
+
+.cores:nth-of-type(15) {
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, rgba(255, 0, 0, 0.5)),
+                      radial-gradient(circle farthest-corner at top right, yellow, transparent); /* Múltiplos gradientes radiais */
+}
+
+.cores:nth-of-type(16) {
+    background-image: radial-gradient(at top, blue, rgba(255, 0, 0, 0.5)),
+                      radial-gradient(at bottom, yellow, transparent); /* Gradientes radiais posicionados no topo e na base */
+}
+
+.cores:nth-of-type(17) {
+    background-image: conic-gradient(red, blue, yellow, green); /* Gradiente cônico */
+}
+
+.cores:nth-of-type(18) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    /*filter: blur(1px); */
+    transition: filter 1s linear; /* Transição para o filtro */
+}
+
+.cores:nth-of-type(18):hover {
+    filter: hue-rotate(360deg); /* Filtro de rotação de matiz ao passar o mouse */
+}
+
+.cores:nth-of-type(19) {
+    background-image: repeating-linear-gradient(to right, white, black, white, black); /* Gradiente linear repetido */
+}
+
+.cores:nth-of-type(20) {
+    background-image: repeating-radial-gradient(white, black, white, black); /* Gradiente radial repetido */
+}
+
+.cores:nth-of-type(21) {
+    background-image: repeating-conic-gradient(white 0deg, white 10deg, black 10deg, black 20deg); /* Gradiente cônico repetido */
+}
+
+.cores:nth-of-type(22) {
+    background-image: repeating-conic-gradient(transparent 0deg, transparent 10deg, black 10deg, black 20deg),
+                      repeating-radial-gradient(red 0%, transparent, blue 20%); /* Gradientes cônicos e radiais repetidos */
+}
+
+.cores:nth-of-type(23) {
+    background-image: repeating-radial-gradient(red 0%, transparent, blue 20%),
+                      repeating-linear-gradient(red, blue); /* Gradientes radiais e lineares repetidos */
+    background-attachment: scroll, fixed; /* Define o comportamento do anexo de fundo */
+}
+
+.cores:nth-of-type(24) {
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra */
+}
+
+.cores:nth-of-type(25) {
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.8)); /* Aplica um filtro de sombra */
+}
+
+.cores:nth-of-type(26) {
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8); /* Gradiente linear e sombra */
+}
+
+.cores:nth-of-type(27) {
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.8)); /* Gradiente linear e filtro de sombra */
+}
+
