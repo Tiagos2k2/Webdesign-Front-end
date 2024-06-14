@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-weight: 300;
+}
+
+.cards_container{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.card{
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+@media screen and (max-weight: 860px) {
+    .card{
+        flex-direction: 
+    }
+}

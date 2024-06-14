@@ -1,0 +1,72 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+    background-color: rgb(122, 122, 255); /* Fundo azul claro */
+    margin-bottom: 50vh; /* Adiciona margem inferior para o corpo da página */
+}
+
+/* Estilo para h1 */
+h1 {
+    font-size: 48px; /* Define o tamanho da fonte */
+    font-weight: lighter; /* Define o peso da fonte mais leve */
+}
+
+/* Estilo para elementos com a classe "card" 3 */
+.card {
+    width: 300px;
+    background-color: white;
+    flex-basis: clamp(300px, (33% - 25px), 400px); /* Define a largura do cartão com um valor flexível */
+    flex-grow: 1; /* Permite que o cartão cresça para preencher o espaço disponível */
+    padding: 40px 30px 30px 50px; /* Define o preenchimento interno: 40px no topo, 30px à direita e embaixo, 50px à esquerda */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura total do elemento */
+    position: relative; /* Define o posicionamento relativo para o cartão */
+}
+
+.card::before {
+    content: ""; /* Adiciona um conteúdo vazio antes do elemento */
+    display: block; /* Exibe o conteúdo como um bloco */
+    width: 34px; /* Define a largura do bloco */
+    height: 34px; /* Define a altura do bloco */
+    position: absolute; /* Define o posicionamento absoluto para o bloco */
+    top: 0; /* Define a posição superior do bloco */
+    left: 0; /* Define a posição esquerda do bloco */
+}
+
+.card_title {
+    margin: 0; /* Remove a margem do título do cartão */
+    font-weight: lighter; /* Define o peso da fonte mais leve para o título do cartão */
+}
+
+.exemplo{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-top: 5px solid black;
+}
+
+.clipath > div{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-image: repeating-linear-gradient(45deg, yellow 10%, orange 20%);
+}
+
+#d1{
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+#d2{
+    clip-path: circle(50% at center);
+}
+
+#d3{
+    clip-path: ellipse(50% 50px at center);
+}
+
+#d4{
+    clip-path: inset(20px 30px 40px 50px);
+}
+
+#d5{
+    clip-path: inset(30px round 50px 20px);
+}

@@ -1,30 +1,74 @@
 /* Estilo para o corpo da página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(1, 1, 80); /* Fundo azul escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+    background-color: rgb(122, 122, 255); /* Fundo azul claro */
+    margin-bottom: 50vh; /* Adiciona margem inferior para o corpo da página */
 }
 
 /* Estilo para h1 */
 h1 {
-    font-size: 48px;
-    font-weight: lighter; /* Peso da fonte mais leve */
+    font-size: 48px; /* Define o tamanho da fonte */
+    font-weight: lighter; /* Define o peso da fonte mais leve */
 }
 
-/* Estilo para h1 e h2 */
-h1, h2 {
-    font-weight: lighter; /* Peso da fonte mais leve */
-}
-
-/* Estilo para h2 */
-h2 {
-    margin: 0; /* Remove a margem */
-}
-
-/* Estilo para elementos com a classe "card" */
+/* Estilo para elementos com a classe "card" 1 */
+/*
 .card {
     width: 400px; /* Define a largura do cartão */
+    /*background-image: linear-gradient(135deg, transparent 25px, white 25px); /* Fundo com gradiente linear, /alternando entre transparente e branco */
+    /*filter: drop-shadow(0 0 5px black); /* Adiciona uma sombra ao cartão */
+    /*padding: 40px 30px 30px 50px; /* Define o preenchimento interno: 40px no topo, 30px à direita e embaixo, 50px à esquerda */
+   /* box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura total do elemento */
+/*}
+*/
+
+/* Estilo para elementos com a classe "card" 2 */
+/*
+.card {
+    /*width: 400px; /* Define a largura do cartão */
+    /*background-image: 
+        linear-gradient(135deg, transparent 25px, rgb(161, 161, 161) 25px), /* Primeiro gradiente: alterna entre transparente e cinza */
+        /*linear-gradient(135deg, transparent 25px, white 25px); /* Segundo gradiente: alterna entre transparente e branco */
+    /*background-size: 34px 34px, 100%; /* Define o tamanho dos fundos: o primeiro é um quadrado de 34px, o segundo preenche 100% */
+   /* background-repeat: no-repeat; /* Impede a repetição do fundo */
+    /*filter: drop-shadow(0 0 5px black); /* Adiciona uma sombra ao cartão */
+    /*padding: 40px 30px 30px 50px; /* Define o preenchimento interno: 40px no topo, 30px à direita e embaixo, 50px à esquerda */
+   /* box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura total do elemento */
+/*}
+*/
+
+/* Estilo para elementos com a classe "card" 3 */
+.card {
+    flex-basis: clamp(300px, (33% - 25px), 400px); /* Define a largura do cartão com um valor flexível */
+    flex-grow: 1; /* Permite que o cartão cresça para preencher o espaço disponível */
     background-image: linear-gradient(135deg, transparent 25px, white 25px); /* Fundo com gradiente linear */
-    filter: drop-shadow(0 0 5px black); /* Adiciona uma sombra */
-    padding: 40px 30px 30px 50px; /* Define o preenchimento interno */
-    box-sizing: border-box; /* Inclui o preenchimento e a borda no tamanho total do elemento */
+    filter: drop-shadow(0 0 5px black); /* Adiciona uma sombra ao cartão */
+    padding: 40px 30px 30px 50px; /* Define o preenchimento interno: 40px no topo, 30px à direita e embaixo, 50px à esquerda */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura total do elemento */
+    position: relative; /* Define o posicionamento relativo para o cartão */
+}
+
+.card::before {
+    content: ""; /* Adiciona um conteúdo vazio antes do elemento */
+    display: block; /* Exibe o conteúdo como um bloco */
+    width: 34px; /* Define a largura do bloco */
+    height: 34px; /* Define a altura do bloco */
+    position: absolute; /* Define o posicionamento absoluto para o bloco */
+    top: 0; /* Define a posição superior do bloco */
+    left: 0; /* Define a posição esquerda do bloco */
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3)); /* Adiciona uma sombra ao bloco */
+    background-image: linear-gradient(135deg, transparent 25px, rgb(161, 161, 161) 25px); /* Fundo com gradiente linear */
+}
+
+.card_title {
+    margin: 0; /* Remove a margem do título do cartão */
+    font-weight: lighter; /* Define o peso da fonte mais leve para o título do cartão */
+}
+
+.cards-container {
+    display: flex; /* Define o contêiner de cartões como um flexbox */
+    gap: 25px; /* Define um espaçamento de 25px entre os cartões */
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte, se necessário */
+    width: 80%; /* Define a largura do contêiner de cartões como 80% */
+    margin: 0 auto; /* Centraliza o contêiner de cartões horizontalmente */
 }
