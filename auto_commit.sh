@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Caminho do diretório do seu projeto
-DIR="/c/Users/tiago.silva.DESKTOP/Documents/Tiago Nunes/Desenvolvimento/Estudos/Webdesign Front-end"
+DIR="/C/Users/tiago.silva.DESKTOP/Documents/Tiago Nunes/Desenvolvimento/Estudos/Webdesign-Front-end"
 
 cd "$DIR" || { echo "Diretório não encontrado: $DIR"; exit 1; }
 

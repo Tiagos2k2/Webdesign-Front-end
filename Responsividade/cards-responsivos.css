@@ -19,8 +19,6 @@ h1{
     padding: 1rem;
 }
 
-@media screen and (max-weight: 860px) {
-    .card{
-        flex-direction: 
-    }
+@media screen and (min-weight: 800px) {
+    .cards_container: flex-direction: row;
 }
