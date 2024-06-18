@@ -1,0 +1,102 @@
+:root{
+    --primary-color: blue;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: "Noto Sans", sans-serif;
+}
+.maxWidth{
+    max-width: 70.25em;
+    margin: auto;
+}
+
+.top_header{
+    text-align: center;
+}
+
+.top_header_nav{
+    background-color: var(--primary-color);
+}
+
+.top_header_nav{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.top_header_nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.top_header_nav li:hover{
+    background-color: color-mix(in srgb, var(--primary-color), antiquewhite 10%);
+}
+
+@media screen and (min-width: 48.75em) {
+    .top_header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top_header_logo{
+        margin-left: 2em;
+    }
+
+    .top_header_nav{
+        background-color: initial;
+    }
+
+    .top_header_nav li{
+        display: inline-block;
+    }
+
+    .top_header_nav a{
+        color: var(--primary-color);
+    }
+
+    .top_header_nav a:hover{
+        background-color: color-mix(in srgb, var(--primary-color), antiquewhite 85%);
+    }
+}
+
+.heroBanner{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1em;
+}
+
+.heroBanner_iconPlay{
+    height: 5em;
+    width: 5em;
+    display: none;
+}
+
+.heroBanner_iconPlay img{
+    width: 100%;
+}
+
+.heroBanner_title{
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.heroBanner_subtitle{
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), antiquewhite);
+}
+
+.heroBanner_btn{
+    display: inline-block;
+    padding: .9em;
+    background-color:blueviolet;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}

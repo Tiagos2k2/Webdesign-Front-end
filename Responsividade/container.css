@@ -1,5 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .card{
@@ -22,6 +23,7 @@ body{
     padding: 1em;
     box-sizing: border-box;
     background-color: #999;
+    flex-grow: 1;
 }
 
 .card_btn{
@@ -37,12 +39,33 @@ body{
     margin: 0 0 1em;
 }
 
-@media screen and (min-width: 50em){
+.card-wrapper{
+    container-type: inline-size;
+}
+
+/*@media screen and (min-width: 50em)*/
+@container screen and (min-width: 50em){
     .card{
         flex-direction: row;
     }
 
     .card_header img{
         max-height: initial;
+    }
+}
+
+.cards_container{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+@media screem and (min-width: 70em){
+    .cards_container{
+        flex-direction: row;
+    }
+
+    .card-wrapper{
+        flex-grow: 1;
     }
 }
